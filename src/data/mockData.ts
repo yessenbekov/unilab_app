@@ -6,14 +6,14 @@ export const doctors: Doctor[] = [
     name: "Dr. Aiman K.",
     specialization: "Therapist",
     experience: "10 years experience",
-    photo: "/doctors/doctor1.jpg",
+    photo: "/images/doctor1.jpg",
   },
   {
     id: "2",
     name: "Dr. Nurlan S.",
     specialization: "Cardiologist",
     experience: "12 years experience",
-    photo: "/doctors/doctor2.jpg",
+    photo: "/images/doctor2.jpg",
   },
 ];
 
