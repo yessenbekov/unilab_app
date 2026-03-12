@@ -1,0 +1,86 @@
+{
+  "navbar": {
+    "home": "Главная",
+    "horses": "Наши лошади",
+    "toggleTheme": "Сменить тему",
+    "services": "Услуги",
+    "doctors": "Врачи"
+  },
+  "homePage": {
+    "writeToWpp": "Написать на WhatsApp",
+    "writeToTG": "Написать в Telegram",
+    "location": "Местоположение",
+    "socialMedia": "Социальные сети",
+    "workTime": "09:00 – 18:00 => Суббота, Воскресенье - выходной",
+    "wannaKnowMore": "Хочешь узнать больше?",
+    "contactUsForMoreInfo": "Свяжитесь с нами для получения дополнительной информации",
+    "heroDescription": "Современная медицинская помощь, опытные специалисты и удобная коммуникация в одном месте.",
+    "doctors": "Врачи",
+    "services": "Услуги"
+  },
+  "horsesPage": {
+    "title": "Наши лошади",
+    "subtitle": "Найдите своего идеального спутника по верховой езде",
+    "noHorses": "В данный момент нет доступных лошадей.",
+    "loading": "Загрузка...",
+    "description": "We have a variety of horses available for riding and training. Each horse has its own unique personality and skills.",
+    "sortBy": "Сортировать по",
+    "newest": "Новейшие",
+    "priceAsc": "Цена: от низкой к высокой",
+    "priceDesc": "Цена: от высокой к низкой",
+    "ageAsc": "Возраст: от молодого к старому",
+    "ageDesc": "Возраст: от старого к молодому",
+    "breed": "Порода",
+    "allBreeds": "Все породы",
+    "horseDetails": {
+      "name": "Имя",
+      "age": "Возраст",
+      "breed": "Порода",
+      "description": "Описание",
+      "ageWithCount": "года"
+    }
+  },
+  "servicesPage": {
+    "title": "Услуги и цены",
+    "subtitle": "Выберите услугу, которая вам подходит",
+    "horseRiding": "Верховая езда",
+    "clubTerritory": "Верховая езда на территории клуба",
+    "ridingInMountains": "Верховая езда в горах",
+    "dependsOnRider": "Зависит от опыта всадника",
+    "kokpar": "Кокпар",
+    "oneTimeVisit": "Одноразовый визит",
+    "monthly": "Ежемесячная подписка",
+    "halfYear": "Полугодовая подписка",
+    "yearly": "Годовая подписка",
+    "minutes": "минут",
+    "5timePerMonth": "5 раз в месяц",
+    "4timePerMonth": "4 раза в месяц",
+    "halfYearDescription": "26 раза по 8500 KZT",
+    "yearlyDescription": "52 раза по 7500 KZT",
+    "readyForRidingOrTraining": "Готовы к верховой езде или тренировке?",
+    "contactUsForMoreInfo": "Свяжитесь с нами для получения дополнительной информации",
+    "writeWhatsapp": "Написать в WhatsApp",
+    "askedQuestions": "Часто задаваемые вопросы"
+  },
+  "horseDetailsPage": {
+    "loading": "Загрузка...",
+    "notFound": "Лошадь не найдена",
+    "backToList": "Назад к списку",
+    "copyLink": "Скопировать ссылку",
+    "copied": "Ссылка скопирована!",
+    "shareWhatsApp": "Поделиться в WhatsApp",
+    "status": {
+      "available": "В наличии",
+      "sold": "Продано"
+    },
+    "breed": "Порода",
+    "age": "Год рождения",
+    "years": "лет",
+    "price": "Цена",
+    "description": "Описание",
+    "videos": "Видео",
+    "prevPhoto": "Предыдущее",
+    "nextPhoto": "Следующее",
+    "contact": "Связаться по лошади"
+  }
+}

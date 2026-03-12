@@ -1,0 +1,86 @@
+{
+  "navbar": {
+    "home": "Home",
+    "horses": "Our Horses",
+    "toggleTheme": "Toggle Theme",
+    "services": "Services",
+    "doctors": "Doctors"
+  },
+  "homePage": {
+    "writeToWpp": "Write to WhatsApp",
+    "writeToTG": "Write to Telegram",
+    "location": "Location",
+    "socialMedia": "Social Media",
+    "workTime": "09:00 – 18:00 => Saturday, Sunday - day off",
+    "wannaKnowMore": "Wanna know more?",
+    "contactUsForMoreInfo": "Contact us for more information",
+    "heroDescription": "Modern medical care, experienced specialists and convenient communication in one place.",
+    "doctors": "Doctors",
+    "services": "Services"
+  },
+  "horsesPage": {
+    "loading": "Loading...",
+    "noHorses": "No horses available at the moment.",
+    "title": "Our Horses",
+    "subtitle": "Find your perfect horse companion",
+    "description": "We have a variety of horses available for riding and training. Each horse has its own unique personality and skills.",
+    "sortBy": "Sort by",
+    "newest": "Newest",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "ageAsc": "Age: Young to Old",
+    "ageDesc": "Age: Old to Young",
+    "breed": "Breed",
+    "allBreeds": "All breeds",
+    "horseDetails": {
+      "name": "Name",
+      "age": "Age",
+      "breed": "Breed",
+      "description": "Description",
+      "ageWithCount": "year"
+    }
+  },
+  "servicesPage": {
+    "title": "Services and pricing",
+    "subtitle": "Choose the service that suits you best",
+    "horseRiding": "Horse Riding",
+    "clubTerritory": "Riding in the club territory",
+    "ridingInMountains": "Riding in mountains",
+    "dependsOnRider": "Depends on rider's experience",
+    "kokpar": "Kokpar",
+    "oneTimeVisit": "One-time visit",
+    "monthly": "Monthly subscription",
+    "halfYear": "Half-year subscription",
+    "yearly": "Yearly subscription",
+    "minutes": "минут",
+    "5timePerMonth": "5 times per month",
+    "4timePerMonth": "4 times per month",
+    "halfYearDescription": "26 times 8500 KZT",
+    "yearlyDescription": "52 times 7500 KZT",
+    "readyForRidingOrTraining": "Ready for riding or training",
+    "contactUsForMoreInfo": "Contact us for more information",
+    "writeWhatsapp": "Write to WhatsApp",
+    "askedQuestions": "Frequently Asked Questions"
+  },
+  "horseDetailsPage": {
+    "loading": "Loading...",
+    "notFound": "Horse not found",
+    "backToList": "Back to list",
+    "copyLink": "Copy link",
+    "copied": "Link copied!",
+    "shareWhatsApp": "Share on WhatsApp",
+    "status": {
+      "available": "Available",
+      "sold": "Sold"
+    },
+    "breed": "Breed",
+    "age": "Born year",
+    "years": "years",
+    "price": "Price",
+    "description": "Description",
+    "videos": "Videos",
+    "prevPhoto": "Previous",
+    "nextPhoto": "Next",
+    "contact": "Contact about the horse"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "navbar": {
+    "home": "Басты бет",
+    "horses": "Біздің аттар",
+    "toggleTheme": "Тақталарды өзгерту",
+    "services": "Қызметтер",
+    "doctors": "Дәрігерлер"
+  },
+  "homePage": {
+    "writeToWpp": "WhatsApp-қа жазу",
+    "writeToTG": "Telegram-ға жазу",
+    "location": "Орналасқан жері",
+    "socialMedia": "Әлеуметтік желілер",
+    "workTime": "09:00 – 18:00 => Сенбі, Дүйсенбі - демалыс күні",
+    "wannaKnowMore": "Көбірек білгіңіз келе ме?",
+    "contactUsForMoreInfo": "Көбірек ақпарат алу үшін бізбен хабарласыңыз",
+    "heroDescription": "Заманауи медициналық көмек, тәжірибелі мамандар және ыңғайлы байланыс бір жерде.",
+    "doctors": "Дәрігерлер",
+    "services": "Қызметтер"
+  },
+  "horsesPage": {
+    "title": "Біздің аттар",
+    "subtitle": "Сіздің мінсіз ат серігіңізді табыңыз",
+    "noHorses": "Қазіргі уақытта аттар жоқ.",
+    "loading": "Жүктелуде...",
+    "description": "We have a variety of horses available for riding and training. Each horse has its own unique personality and skills.",
+    "sortBy": "Сұрыптау",
+    "newest": "Ең жаңа",
+    "priceAsc": "Бағасы: Төменнен Жоғарыға",
+    "priceDesc": "Бағасы: Жоғарыдан Төменге",
+    "ageAsc": "Жасы: Жасқа дейін",
+    "ageDesc": "Жасы: Ересекке дейін",
+    "breed": "Тұқым",
+    "allBreeds": "Барлық тұқымдар",
+    "horseDetails": {
+      "name": "Аты",
+      "age": "Жасы",
+      "breed": "Тұқымы",
+      "description": "Сипаттама",
+      "ageWithCount": "жылы туылған"
+    }
+  },
+  "servicesPage": {
+    "title": "Қызметтер мен бағалар",
+    "subtitle": "Сізге ең қолайлы қызметті таңдаңыз",
+    "horseRiding": "Атпен жүру",
+    "clubTerritory": "Клуб аумағында жүру",
+    "ridingInMountains": "Тауда серуендеу",
+    "dependsOnRider": "Жүргізушінің тәжірибесіне байланысты",
+    "kokpar": "Кокпар",
+    "oneTimeVisit": "Бір рет бару",
+    "monthly": "1 айлық жазылым",
+    "halfYear": "Жарты жылдық жазылым",
+    "yearly": "1 жылдық жазылым",
+    "minutes": "минут",
+    "5timePerMonth": "Айына 5 рет",
+    "4timePerMonth": "Айына 4 рет",
+    "halfYearDescription": "26 рет 8500 KZT",
+    "yearlyDescription": "52 рет 7500 KZT",
+    "readyForRidingOrTraining": "Атқа мінуге немесе жаттығуға дайынсызба?",
+    "contactUsForMoreInfo": "Көбірек ақпарат алу үшін бізбен хабарласыңыз",
+    "writeWhatsapp": "WhatsApp-қа жазу",
+    "askedQuestions": "Жиі қойылатын сұрақтар"
+  },
+  "horseDetailsPage": {
+    "loading": "Жүктелуде...",
+    "notFound": "Жылқы табылмады",
+    "backToList": "Тізімге оралу",
+    "copyLink": "Сілтемені көшіру",
+    "copied": "Сілтеме көшірілді!",
+    "shareWhatsApp": "WhatsApp арқылы бөлісу",
+    "status": {
+      "available": "Қол жетімді",
+      "sold": "Сатылды"
+    },
+    "breed": "Тұқымы",
+    "age": "Туған жылы",
+    "years": "жас",
+    "price": "Бағасы",
+    "description": "Сипаттама",
+    "videos": "Бейне",
+    "prevPhoto": "Алдыңғы",
+    "nextPhoto": "Келесі",
+    "contact": "Жылқы жайлы хабарласу"
+  }
+}
