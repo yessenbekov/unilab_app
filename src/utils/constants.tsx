@@ -49,3 +49,15 @@ export const socialLinks = [
     bg: "bg-blue-500",
   },
 ];
+
+export const clinicInfo = {
+  name: "UniLab",
+  address: {
+    ru: "г. Алматы, ...",
+    kk: "Алматы қ., ...",
+    en: "Almaty, ...",
+  },
+  phone: "+7 xxx xxx xx xx",
+  whatsapp: "+7 xxx xxx xx xx",
+  email: "info@unilab.kz",
+};

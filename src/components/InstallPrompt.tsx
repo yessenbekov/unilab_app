@@ -148,7 +148,7 @@ export default function InstallPrompt() {
           >
             <div className="mb-2">
               <Image
-                src="/images/logo.svg"
+                src="/icons/icon.svg"
                 alt="App logo"
                 width={40}
                 height={40}

@@ -14,7 +14,7 @@ const nextConfig = {
   },
   experimental: {},
   images: {
-    domains: ["luxikyclvakgjtcawupf.supabase.co", "url.com"],
+    domains: ["ofkuuwrztpqjgfsqzvwa.supabase.co", "url.com"],
   },
   async headers() {
     return [
