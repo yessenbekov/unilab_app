@@ -1,8 +1,8 @@
-import { DoctorWithRelations } from "@/models/doctorWithRel";
+import { DoctorWithSpecialization } from "@/models/doctor";
 import { DoctorCard } from "./DoctorCard";
 
 type Props = {
-  doctors: DoctorWithRelations[];
+  doctors: DoctorWithSpecialization[];
   locale: string;
 };
 

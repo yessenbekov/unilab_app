@@ -42,7 +42,13 @@
   },
   "servicesPage": {
     "title": "Қызметтер мен бағалар",
-    "subtitle": "Сізге ең қолайлы қызметті таңдаңыз",
+    "subtitle": "Сізге ең қолайлы медициналық қызметті таңдаңыз",
+    "consultationTitle": "Жалпы консультация",
+    "consultationDescription": "Дәрігердің алғашқы қабылдауы",
+    "consultationPrice": "10 000 ₸",
+    "bloodAnalysisTitle": "Қан талдауы",
+    "bloodAnalysisDescription": "Жалпы қан талдауы",
+    "bloodAnalysisPrice": "6 000 ₸",
     "horseRiding": "Атпен жүру",
     "clubTerritory": "Клуб аумағында жүру",
     "ridingInMountains": "Тауда серуендеу",
@@ -61,6 +67,24 @@
     "contactUsForMoreInfo": "Көбірек ақпарат алу үшін бізбен хабарласыңыз",
     "writeWhatsapp": "WhatsApp-қа жазу",
     "askedQuestions": "Жиі қойылатын сұрақтар"
+  },
+  "doctorsPage": {
+    "title": "Дәрігерлер",
+    "subtitle": "Қабылдау үшін қажетті маманды таңдаңыз",
+    "loading": "Жүктелуде...",
+    "specialization": "Мамандану",
+    "allSpecializations": "Барлық мамандықтар",
+    "noDoctors": "Дәрігерлер табылмады",
+    "yearsExperience": "Тәжірибесі: {count} жыл"
+  },
+  "doctorDetailsPage": {
+    "loading": "Жүктелуде...",
+    "backToDoctors": "Дәрігерлерге оралу",
+    "notFound": "Дәрігер табылмады",
+    "noPhoto": "Фото жоқ",
+    "yearsExperience": "Тәжірибесі: {count} жыл",
+    "phone": "Телефон",
+    "email": "Email"
   },
   "horseDetailsPage": {
     "loading": "Жүктелуде...",

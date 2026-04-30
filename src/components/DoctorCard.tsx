@@ -1,10 +1,10 @@
-import { DoctorWithRelations } from "@/models/doctorWithRel";
+import { DoctorWithSpecialization } from "@/models/doctor";
 import { getLocalizedValue } from "@/utils/getLocalizedValue";
 import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
-  doctor: DoctorWithRelations;
+  doctor: DoctorWithSpecialization;
   locale: string;
 };
 

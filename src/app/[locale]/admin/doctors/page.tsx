@@ -7,6 +7,21 @@ import { supabase } from "@/lib/supabaseClient";
 import { Specialization } from "@/models/specialization";
 import { getSpecializations } from "@/services/specializations/getSpecializations";
 
+type DoctorPayload = {
+  full_name: string;
+  slug: string;
+  specialization_id: string | null;
+  short_bio_ru: string | null;
+  short_bio_kk: string | null;
+  short_bio_en: string | null;
+  experience_years: number | null;
+  category: string | null;
+  phone: string | null;
+  email: string | null;
+  is_active: boolean;
+  photo_url?: string | null;
+};
+
 function slugify(value: string) {
   return value
     .toLowerCase()
@@ -59,10 +74,6 @@ export default function AdminDoctorsPage() {
 
     setLoading(false);
   };
-
-  useEffect(() => {
-    fetchDoctors();
-  }, []);
 
   useEffect(() => {
     fetchDoctors();
@@ -188,7 +199,7 @@ export default function AdminDoctorsPage() {
       }
     }
 
-    const payload: any = {
+    const payload: DoctorPayload = {
       full_name: form.full_name.trim(),
       slug: generatedSlug.trim(),
       specialization_id: form.specialization_id || null,
@@ -222,7 +233,13 @@ export default function AdminDoctorsPage() {
         .update(updatePayload)
         .eq("id", editingDoctorId);
 
-      console.log("UPDATE ERROR:", error);
+      if (error) {
+        console.error("Update error:", error.message);
+        alert(error.message);
+      } else {
+        resetForm();
+        await fetchDoctors();
+      }
     } else {
       const insertPayload = {
         ...payload,

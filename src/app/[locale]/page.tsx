@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   MapPin,
@@ -47,9 +48,11 @@ export default function Home() {
           className="text-center"
         >
           <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full">
-            <img
-              src="./icon.svg"
+            <Image
+              src="/icons/unilab-logo.png"
               alt="Unilab Medical"
+              width={80}
+              height={80}
               className="h-20 w-20 object-contain"
             />
           </div>
@@ -140,7 +143,13 @@ export default function Home() {
               className="flex items-center justify-between rounded-3xl bg-black/40 px-4 py-4 text-white shadow-lg backdrop-blur-md transition active:scale-[0.99]"
             >
               <div className="flex items-center gap-3">
-                <img src="/icons/2gis.svg" alt="2GIS" className="h-8 w-auto" />
+                <Image
+                  src="/icons/2gis.svg"
+                  alt="2GIS"
+                  width={72}
+                  height={32}
+                  className="h-8 w-auto"
+                />
                 <span className="text-sm font-medium">2GIS</span>
               </div>
               <span className="text-2xl text-white/90">›</span>
@@ -153,9 +162,11 @@ export default function Home() {
               className="flex items-center justify-between rounded-3xl bg-black/40 px-4 py-4 text-white shadow-lg backdrop-blur-md transition active:scale-[0.99]"
             >
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="/icons/google-maps.svg"
                   alt="Google Maps"
+                  width={40}
+                  height={40}
                   className="h-10 w-10 rounded-full bg-white object-contain"
                 />
                 <span className="text-sm font-medium">Google Maps</span>

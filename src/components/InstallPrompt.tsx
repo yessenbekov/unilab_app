@@ -5,6 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { SquarePlus } from "lucide-react";
 
+type BeforeInstallPromptEvent = Event & {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{ outcome: "accepted" | "dismissed"; platform: string }>;
+};
+
 function isIOS() {
   return (
     typeof window !== "undefined" &&
@@ -26,7 +31,8 @@ export function useInstallPrompt() {
 }
 
 export default function InstallPrompt() {
-  const [deferredPrompt, setDeferredPrompt] = useState<null | Event>(null);
+  const [deferredPrompt, setDeferredPrompt] =
+    useState<BeforeInstallPromptEvent | null>(null);
   const [showInstall, setShowInstall] = useState(false);
   const [showIosPrompt, setShowIosPrompt] = useState(false);
 
@@ -43,15 +49,14 @@ export default function InstallPrompt() {
 
     const handler = (e: Event) => {
       e.preventDefault();
-      setDeferredPrompt(e);
+      setDeferredPrompt(e as BeforeInstallPromptEvent);
       setTimeout(() => {
         setShowInstall(true);
       }, 3000);
     };
 
-    window.addEventListener("beforeinstallprompt", handler as any);
-    return () =>
-      window.removeEventListener("beforeinstallprompt", handler as any);
+    window.addEventListener("beforeinstallprompt", handler);
+    return () => window.removeEventListener("beforeinstallprompt", handler);
   }, []);
 
   const triggerPrompt = useCallback(() => {
@@ -75,10 +80,9 @@ export default function InstallPrompt() {
   const handleInstallClick = async () => {
     if (!deferredPrompt) return;
 
-    const promptEvent = deferredPrompt as any;
-    promptEvent.prompt();
+    await deferredPrompt.prompt();
 
-    const choiceResult = await promptEvent.userChoice;
+    const choiceResult = await deferredPrompt.userChoice;
     if (choiceResult.outcome === "accepted") {
       console.log("User accepted the install prompt");
     } else {

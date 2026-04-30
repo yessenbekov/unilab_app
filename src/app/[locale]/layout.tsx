@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
@@ -7,8 +6,6 @@ import { getMessages } from "next-intl/server";
 import { Toaster } from "react-hot-toast";
 import RegisterSW from "@/components/RegisterSW";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Unilab Medical",
@@ -32,10 +29,10 @@ export default async function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#ffffff" />
-        <link rel="icon" href="/icons/icon-192x192.png" />
+        <link rel="icon" href="/icons/icon.svg" />
         <meta name="mobile-web-app-capable" content="Unilab Medical" />
       </head>
-      <body className={inter.className}>
+      <body>
         <NextIntlClientProvider locale={detectedLocale} messages={messages}>
           <SpeedInsights />
           <Toaster position="top-right" />

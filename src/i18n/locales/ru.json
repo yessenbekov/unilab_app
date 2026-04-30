@@ -42,7 +42,13 @@
   },
   "servicesPage": {
     "title": "Услуги и цены",
-    "subtitle": "Выберите услугу, которая вам подходит",
+    "subtitle": "Выберите медицинскую услугу, которая вам подходит",
+    "consultationTitle": "Общая консультация",
+    "consultationDescription": "Первичный прием у врача",
+    "consultationPrice": "10 000 ₸",
+    "bloodAnalysisTitle": "Анализ крови",
+    "bloodAnalysisDescription": "Общий анализ крови",
+    "bloodAnalysisPrice": "6 000 ₸",
     "horseRiding": "Верховая езда",
     "clubTerritory": "Верховая езда на территории клуба",
     "ridingInMountains": "Верховая езда в горах",
@@ -61,6 +67,24 @@
     "contactUsForMoreInfo": "Свяжитесь с нами для получения дополнительной информации",
     "writeWhatsapp": "Написать в WhatsApp",
     "askedQuestions": "Часто задаваемые вопросы"
+  },
+  "doctorsPage": {
+    "title": "Врачи",
+    "subtitle": "Выберите подходящего специалиста для приема",
+    "loading": "Загрузка...",
+    "specialization": "Специализация",
+    "allSpecializations": "Все специализации",
+    "noDoctors": "Врачи не найдены",
+    "yearsExperience": "Опыт: {count} лет"
+  },
+  "doctorDetailsPage": {
+    "loading": "Загрузка...",
+    "backToDoctors": "Назад к врачам",
+    "notFound": "Врач не найден",
+    "noPhoto": "Нет фото",
+    "yearsExperience": "Опыт: {count} лет",
+    "phone": "Телефон",
+    "email": "Email"
   },
   "horseDetailsPage": {
     "loading": "Загрузка...",

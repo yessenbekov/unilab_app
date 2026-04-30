@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,6 +29,7 @@ function getDoctorBio(doctor: Doctor, locale: string) {
 
 export default function DoctorPage() {
   const locale = useLocale();
+  const t = useTranslations("doctorDetailsPage");
   const params = useParams<{ slug: string }>();
   const slug = params?.slug;
 
@@ -51,7 +52,7 @@ export default function DoctorPage() {
     return (
       <main className="min-h-screen bg-white px-4 py-10 md:px-8">
         <div className="mx-auto max-w-6xl">
-          <p className="text-gray-500">Loading...</p>
+          <p className="text-gray-500">{t("loading")}</p>
         </div>
       </main>
     );
@@ -65,11 +66,11 @@ export default function DoctorPage() {
             href={`/${locale}/doctors`}
             className="mb-6 inline-block text-sm text-gray-500 hover:text-black"
           >
-            ← Back to doctors
+            {t("backToDoctors")}
           </Link>
 
           <div className="rounded-2xl border border-dashed border-gray-300 p-10 text-center text-gray-500">
-            Doctor not found
+            {t("notFound")}
           </div>
         </div>
       </main>
@@ -85,7 +86,7 @@ export default function DoctorPage() {
           href={`/${locale}/doctors`}
           className="mb-6 inline-block text-sm text-gray-500 hover:text-black"
         >
-          ← Back to doctors
+          {t("backToDoctors")}
         </Link>
 
         <div className="grid gap-8 md:grid-cols-[380px_minmax(0,1fr)]">
@@ -99,7 +100,7 @@ export default function DoctorPage() {
               />
             ) : (
               <div className="flex h-full items-center justify-center text-sm text-gray-400">
-                No photo
+                {t("noPhoto")}
               </div>
             )}
           </div>
@@ -115,7 +116,7 @@ export default function DoctorPage() {
 
             {doctor.experience_years ? (
               <p className="mt-2 text-sm text-gray-500">
-                {doctor.experience_years} years experience
+                {t("yearsExperience", { count: doctor.experience_years })}
               </p>
             ) : null}
 
@@ -129,14 +130,14 @@ export default function DoctorPage() {
               <div className="mt-8 space-y-2 rounded-2xl border border-gray-200 p-5">
                 {doctor.phone ? (
                   <p className="text-sm text-gray-700">
-                    <span className="font-medium text-black">Phone:</span>{" "}
+                    <span className="font-medium text-black">{t("phone")}:</span>{" "}
                     {doctor.phone}
                   </p>
                 ) : null}
 
                 {doctor.email ? (
                   <p className="text-sm text-gray-700">
-                    <span className="font-medium text-black">Email:</span>{" "}
+                    <span className="font-medium text-black">{t("email")}:</span>{" "}
                     {doctor.email}
                   </p>
                 ) : null}

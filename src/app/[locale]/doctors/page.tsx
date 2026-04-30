@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { DoctorWithSpecialization } from "@/models/doctor";
 import { Specialization } from "@/models/specialization";
@@ -73,6 +73,7 @@ function getLocalizedSpecialization(
 
 export default function DoctorsPage() {
   const locale = useLocale();
+  const t = useTranslations("doctorsPage");
 
   const [doctors, setDoctors] = useState<DoctorWithSpecialization[]>([]);
   const [specializations, setSpecializations] = useState<Specialization[]>([]);
@@ -107,7 +108,7 @@ export default function DoctorsPage() {
       <main className="min-h-screen bg-white px-4 py-10 md:px-8">
         <div className="mx-auto max-w-7xl">
           <h1 className="mb-6 text-3xl font-bold text-black">Doctors</h1>
-          <p className="text-gray-500">Loading...</p>
+          <p className="text-gray-500">{t("loading")}</p>
         </div>
       </main>
     );
@@ -118,22 +119,22 @@ export default function DoctorsPage() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-black">Doctors</h1>
+            <h1 className="text-3xl font-bold text-black">{t("title")}</h1>
             <p className="mt-2 text-gray-600">
-              Choose the right specialist for your appointment
+              {t("subtitle")}
             </p>
           </div>
 
           <div className="w-full md:w-[320px]">
             <label className="mb-2 block text-sm font-medium text-gray-700">
-              Specialization
+              {t("specialization")}
             </label>
             <select
               value={selectedSpecializationId}
               onChange={(e) => setSelectedSpecializationId(e.target.value)}
               className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none"
             >
-              <option value="">All specializations</option>
+              <option value="">{t("allSpecializations")}</option>
               {specializations.map((item) => (
                 <option key={item.id} value={item.id}>
                   {locale === "kk"
@@ -149,7 +150,7 @@ export default function DoctorsPage() {
 
         {!filteredDoctors.length ? (
           <div className="rounded-2xl border border-dashed border-gray-300 p-10 text-center text-gray-500">
-            No doctors found
+            {t("noDoctors")}
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
@@ -202,7 +203,9 @@ export default function DoctorsPage() {
 
                     <div className="text-sm text-gray-500">
                       {doctor.experience_years
-                        ? `${doctor.experience_years} years experience`
+                        ? t("yearsExperience", {
+                            count: doctor.experience_years,
+                          })
                         : ""}
                     </div>
                   </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 export const whatsAppNumber = "+77024325253";
 export const SKELETON_COUNT = 6;
 export const ITEMS_PER_PAGE = 6;
@@ -8,9 +9,11 @@ export const socialLinks = [
     href: "https://instagram.com/unilab.medical",
     label: "Instagram",
     icon: (
-      <img
+      <Image
         src="/icons/instagram.svg"
         alt="instagram"
+        width={100}
+        height={80}
         className="w-25 h-20 mb-2"
       />
     ),
@@ -20,7 +23,13 @@ export const socialLinks = [
     href: "https://www.tiktok.com/@unilab.medical",
     label: "TikTok",
     icon: (
-      <img src="/icons/tiktok.svg" alt="tiktok" className="w-25 h-20 mb-2" />
+      <Image
+        src="/icons/tiktok.svg"
+        alt="tiktok"
+        width={100}
+        height={80}
+        className="w-25 h-20 mb-2"
+      />
     ),
     bg: "bg-black",
   },
@@ -28,9 +37,11 @@ export const socialLinks = [
     href: `https://wa.me/${whatsAppNumber}`,
     label: "WhatsApp",
     icon: (
-      <img
+      <Image
         src="/icons/whatsapp.svg"
         alt="WhatsApp"
+        width={100}
+        height={80}
         className="w-25 h-20 mb-2"
       />
     ),
@@ -40,9 +51,11 @@ export const socialLinks = [
     href: "https://t.me/unilab_medical",
     label: "Telegram",
     icon: (
-      <img
+      <Image
         src="/icons/telegram.svg"
         alt="Telegram"
+        width={100}
+        height={80}
         className="w-25 h-20 mb-2"
       />
     ),
