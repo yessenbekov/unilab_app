@@ -17,7 +17,7 @@ export function Navbar() {
   const isHome = pathname === `/${locale}`;
   const isDoctors = pathname.startsWith(`/${locale}/doctors`);
   const isServices = pathname.startsWith(`/${locale}/services`);
-  const isAdminPage = pathname.startsWith(`/${locale}/admin/doctors`);
+  const isAdminPage = pathname.startsWith(`/${locale}/admin`);
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
@@ -94,7 +94,7 @@ export function Navbar() {
             </Link>
 
             {isAdmin && (
-              <Link href={`/${locale}/admin/doctors`} className={navItemClass}>
+              <Link href={`/${locale}/admin`} className={navItemClass}>
                 <span
                   className={
                     isAdminPage
@@ -102,7 +102,7 @@ export function Navbar() {
                       : "hover:opacity-70"
                   }
                 >
-                  Admin
+                  {t("admin")}
                 </span>
               </Link>
             )}
@@ -170,7 +170,7 @@ export function Navbar() {
 
               {isAdmin && (
                 <Link
-                  href={`/${locale}/admin/doctors`}
+                  href={`/${locale}/admin`}
                   onClick={handleNavClick}
                   className={navItemClass}
                 >
@@ -181,7 +181,7 @@ export function Navbar() {
                         : ""
                     }
                   >
-                    Admin
+                    {t("admin")}
                   </span>
                 </Link>
               )}

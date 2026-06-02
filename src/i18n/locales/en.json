@@ -4,7 +4,8 @@
     "horses": "Our Horses",
     "toggleTheme": "Toggle Theme",
     "services": "Services",
-    "doctors": "Doctors"
+    "doctors": "Doctors",
+    "admin": "Admin"
   },
   "homePage": {
     "writeToWpp": "Write to WhatsApp",
@@ -85,6 +86,34 @@
     "yearsExperience": "{count} years experience",
     "phone": "Phone",
     "email": "Email"
+  },
+  "adminDashboard": {
+    "staffPanel": "Staff panel",
+    "description": "A clinic staff workspace for appointments, lab results, patients, and operational safety notifications.",
+    "todayStatus": "Today's status",
+    "alerts": "Alerts",
+    "appointments": "Appointments",
+    "results": "Results",
+    "activeAppointments": "Active appointments",
+    "activeAppointmentsDescription": "Upcoming visits, queue status, and quick schedule control.",
+    "labResults": "Lab results",
+    "labResultsDescription": "Completed and pending laboratory results.",
+    "patients": "Patients",
+    "patientsDescription": "Patient records and recent clinic visits.",
+    "security": "Security",
+    "securityNotifications": "Safety notifications",
+    "requiresAttention": "Needs attention",
+    "fireAlarm": "Fire alarm",
+    "fireAlarmDescription": "Smoke detector: room 204",
+    "ignitionRisk": "Ignition risk",
+    "ignitionRiskDescription": "Consumables storage",
+    "temperatureHigh": "Temperature elevated",
+    "temperatureHighDescription": "Server room / refrigerator",
+    "urgent": "Urgent",
+    "check": "Check",
+    "adminTools": "Admin tools",
+    "adminToolsDescription": "Quick access to managing application directories and records.",
+    "manageDoctors": "Manage doctors"
   },
   "horseDetailsPage": {
     "loading": "Loading...",

@@ -7,7 +7,7 @@ export function AdminAccessSetter() {
   useEffect(() => {
     const adminParam = searchParams.get("adminAccessTrue");
     if (adminParam === "1") {
-      localStorage.setItem("isAdminDaukey", "true");
+      localStorage.setItem("isAdminUnilab", "true");
     }
   }, [searchParams]);
 

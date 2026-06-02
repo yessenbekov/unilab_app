@@ -4,7 +4,8 @@
     "horses": "Наши лошади",
     "toggleTheme": "Сменить тему",
     "services": "Услуги",
-    "doctors": "Врачи"
+    "doctors": "Врачи",
+    "admin": "Админ"
   },
   "homePage": {
     "writeToWpp": "Написать на WhatsApp",
@@ -85,6 +86,34 @@
     "yearsExperience": "Опыт: {count} лет",
     "phone": "Телефон",
     "email": "Email"
+  },
+  "adminDashboard": {
+    "staffPanel": "Панель персонала",
+    "description": "Рабочий экран для персонала клиники: записи, результаты анализов, пациенты и оперативные уведомления безопасности.",
+    "todayStatus": "Статус на сегодня",
+    "alerts": "Оповещения",
+    "appointments": "Записи",
+    "results": "Анализы",
+    "activeAppointments": "Активные записи",
+    "activeAppointmentsDescription": "Ближайшие приемы, очередь и быстрый контроль расписания.",
+    "labResults": "Результаты анализов",
+    "labResultsDescription": "Готовые и ожидающие проверки результаты лаборатории.",
+    "patients": "Пациенты",
+    "patientsDescription": "Пациентская база и последние обращения в клинику.",
+    "security": "Безопасность",
+    "securityNotifications": "Уведомления безопасности",
+    "requiresAttention": "Требует внимания",
+    "fireAlarm": "Пожарная тревога",
+    "fireAlarmDescription": "Датчик дыма: кабинет 204",
+    "ignitionRisk": "Риск возгорания",
+    "ignitionRiskDescription": "Склад расходников",
+    "temperatureHigh": "Температура повышена",
+    "temperatureHighDescription": "Серверная / холодильник",
+    "urgent": "Срочно",
+    "check": "Проверить",
+    "adminTools": "Инструменты администратора",
+    "adminToolsDescription": "Быстрый доступ к управлению справочниками и данными приложения.",
+    "manageDoctors": "Управление врачами"
   },
   "horseDetailsPage": {
     "loading": "Загрузка...",

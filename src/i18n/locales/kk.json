@@ -4,7 +4,8 @@
     "horses": "Біздің аттар",
     "toggleTheme": "Тақталарды өзгерту",
     "services": "Қызметтер",
-    "doctors": "Дәрігерлер"
+    "doctors": "Дәрігерлер",
+    "admin": "Админ"
   },
   "homePage": {
     "writeToWpp": "WhatsApp-қа жазу",
@@ -85,6 +86,34 @@
     "yearsExperience": "Тәжірибесі: {count} жыл",
     "phone": "Телефон",
     "email": "Email"
+  },
+  "adminDashboard": {
+    "staffPanel": "Персонал панелі",
+    "description": "Клиника персоналына арналған жұмыс экраны: қабылдаулар, талдау нәтижелері, пациенттер және қауіпсіздік хабарламалары.",
+    "todayStatus": "Бүгінгі жағдай",
+    "alerts": "Хабарламалар",
+    "appointments": "Жазбалар",
+    "results": "Талдаулар",
+    "activeAppointments": "Белсенді жазбалар",
+    "activeAppointmentsDescription": "Жақын қабылдаулар, кезек және кестені жылдам бақылау.",
+    "labResults": "Талдау нәтижелері",
+    "labResultsDescription": "Дайын және тексеруді күтіп тұрған зертхана нәтижелері.",
+    "patients": "Пациенттер",
+    "patientsDescription": "Пациенттер базасы және клиникаға соңғы жүгінулер.",
+    "security": "Қауіпсіздік",
+    "securityNotifications": "Қауіпсіздік хабарламалары",
+    "requiresAttention": "Назар аудару қажет",
+    "fireAlarm": "Өрт дабылы",
+    "fireAlarmDescription": "Түтін датчигі: 204 кабинет",
+    "ignitionRisk": "Тұтану қаупі",
+    "ignitionRiskDescription": "Шығын материалдары қоймасы",
+    "temperatureHigh": "Температура көтерілді",
+    "temperatureHighDescription": "Сервер бөлмесі / тоңазытқыш",
+    "urgent": "Шұғыл",
+    "check": "Тексеру",
+    "adminTools": "Админ құралдары",
+    "adminToolsDescription": "Қосымшадағы анықтамалықтар мен деректерді басқаруға жылдам қолжеткізу.",
+    "manageDoctors": "Дәрігерлерді басқару"
   },
   "horseDetailsPage": {
     "loading": "Жүктелуде...",
